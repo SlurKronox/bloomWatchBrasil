@@ -145,7 +145,7 @@ export default function Galeria() {
 
         {filteredImages.length === 0 && (
           <div className="bg-gray-200 rounded-xl p-12 text-center">
-            <p className="text-gray-600 text-lg">Nenhuma imagem encontrada para "{searchQuery}"</p>
+            <p className="text-gray-600 text-lg">Nenhuma imagem encontrada para &quot;{searchQuery}&quot;</p>
           </div>
         )}
 

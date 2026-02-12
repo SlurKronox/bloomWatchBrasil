@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Leaf, BarChart3, Map as MapIcon, Satellite, Image, ImageIcon } from 'lucide-react';
+import { Leaf, BarChart3, Map as MapIcon, Satellite, Image } from 'lucide-react';
 import SearchAndFilter from './components/SearchAndFilter.jsx';
 import ExportButtons from './components/ExportButtons.jsx';
 import AnalyticsDashboard from './components/AnalyticsDashboard.jsx';
@@ -184,7 +184,6 @@ function AppV2() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {filteredPlants.map(plant => {
-                    const region = regions.find(r => r.id === plant.regiao_id);
                     return (
                       <div
                         key={plant.id}

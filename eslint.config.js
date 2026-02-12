@@ -7,7 +7,7 @@ import pluginJsxRuntime from "eslint-plugin-react/configs/jsx-runtime.js";
 import pluginReact from "eslint-plugin-react";
 
 export default [
-  { ignores: ["dist"] },
+  { ignores: ["dist", "coverage"] },
   js.configs.recommended,
   pluginJsxRuntime,
   {
@@ -23,11 +23,12 @@ export default [
       },
     },
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: "latest",
       sourceType: "module",
       globals: {
         ...globals.browser,
         ...globals.node,
+        Deno: "readonly",
       },
       parserOptions: {
         ecmaFeatures: {
@@ -43,6 +44,7 @@ export default [
         { allowConstantExport: true },
       ],
       "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
     },
   },
 ];

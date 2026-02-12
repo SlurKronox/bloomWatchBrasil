@@ -27,9 +27,11 @@ export default function MapView({ regions, onRegionClick, selectedRegionId }) {
       }).addTo(mapRef.current);
     }
 
+    const markers = markersRef.current;
+
     // Clear existing markers
-    markersRef.current.forEach(marker => marker.remove());
-    markersRef.current.clear();
+    markers.forEach(marker => marker.remove());
+    markers.clear();
 
     // Add markers for each region
     regions.forEach(region => {
@@ -256,7 +258,7 @@ export default function MapView({ regions, onRegionClick, selectedRegionId }) {
         }
       });
 
-      markersRef.current.set(region.id, marker);
+      markers.set(region.id, marker);
     });
 
     // Setup window callback
@@ -265,8 +267,8 @@ export default function MapView({ regions, onRegionClick, selectedRegionId }) {
     };
 
     return () => {
-      markersRef.current.forEach(marker => marker.remove());
-      markersRef.current.clear();
+      markers.forEach(marker => marker.remove());
+      markers.clear();
       delete window.selectRegionV2;
     };
   }, [regions, onRegionClick, selectedRegionId]);

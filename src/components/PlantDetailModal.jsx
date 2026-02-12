@@ -1,4 +1,4 @@
-import { X, MapPin, Calendar, Shield, Droplets, Thermometer, Info, Leaf, Users, Heart, BookOpen, Sparkles } from 'lucide-react';
+import { X, MapPin, Calendar, Shield, Thermometer, Info, Leaf, Users, Heart, BookOpen, Sparkles } from 'lucide-react';
 
 export default function PlantDetailModal({ plant, region, onClose }) {
   const getMonthName = (month) => {

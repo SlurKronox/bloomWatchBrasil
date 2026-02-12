@@ -1,4 +1,4 @@
-import { Satellite, Calendar, Download } from 'lucide-react';
+import { Satellite, Download } from 'lucide-react';
 
 // Importação das Imagens
 import al_08_29 from '../assets/Nor/AL/mapa_ndvi_AL_2025-08-29.png';
