@@ -1,16 +1,24 @@
-# CI
+ï»¿# CI
 
-## Workflow
-Arquivo: `.github/workflows/ci.yml`
+## Workflows
+- `.github/workflows/ci.yml`
+- `.github/workflows/security.yml`
 
-Jobs:
+## CI Jobs
 - `lint`
 - `test`
 - `build`
 
+## Security Jobs
+- `dependency-review` (PR)
+- `codeql` (push, PR, schedule)
+
 ## Ambiente
 - Node 20
-- Dependências instaladas com `npm ci`
+- Dependencias instaladas com `npm ci`
+
+## Criterio de aprovacao
+Repositorio legado deve manter CI e Security verdes para estabilidade.
 
 ## English Summary
-Legacy repo remains CI-protected with lint, test, and build jobs.
+Legacy repo remains protected by CI and Security workflows for maintenance stability.

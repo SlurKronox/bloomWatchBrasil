@@ -1,15 +1,16 @@
-# BloomWatch Brasil (Legacy)
+ï»¿# BloomWatch Brasil (Legacy)
 
 ![CI](https://github.com/SlurKronox/bloomWatchBrasil/actions/workflows/ci.yml/badge.svg)
+![Security](https://github.com/SlurKronox/bloomWatchBrasil/actions/workflows/security.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-> Este repositório está em modo **legado**.
-> Repositório principal: **https://github.com/SlurKronox/bloomwatch-brasil-techers**
+> Este repositorio esta em modo **legado**.
+> Repositorio principal: **https://github.com/SlurKronox/bloomwatch-brasil-techers**
 
 ## Objetivo
-Versão histórica do BloomWatch em JavaScript, mantida para referência e compatibilidade.
-A base continua com validação técnica completa (lint, testes e build) para garantir rastreabilidade.
-Novas evoluções funcionais devem ocorrer no repositório principal em TypeScript.
+Versao historica do BloomWatch em JavaScript, mantida para referencia e compatibilidade.
+A base continua com validacao tecnica completa (lint, testes e build) para garantir rastreabilidade.
+Novas evolucoes funcionais devem ocorrer no repositorio principal em TypeScript.
 
 ## Stack
 - React 18
@@ -20,10 +21,10 @@ Novas evoluções funcionais devem ocorrer no repositório principal em TypeScript.
 
 ## Arquitetura
 - `src/components`: interface e dashboards
-- `src/services`: previsão e integrações
+- `src/services`: previsao e integracoes
 - `src/lib`: cliente API/Supabase
-- `supabase/`: funções e migrações
-- `docs/`: documentação técnica
+- `supabase/`: funcoes e migracoes
+- `docs/`: documentacao tecnica
 
 ## Setup Local
 ```bash
@@ -45,11 +46,17 @@ npm run test
 npm run build
 ```
 
-## Documentação
+## Documentacao
+- `docs/README.md`
 - `docs/ARCHITECTURE.md`
 - `docs/TESTING.md`
 - `docs/CI.md`
+- `docs/SECURITY.md`
+
+## Governanca
+- Politica de seguranca: `SECURITY.md`
+- Guia de contribuicao: `CONTRIBUTING.md`
 
 ## English Summary
-Legacy JavaScript BloomWatch repository kept stable with full CI gates.
+Legacy JavaScript BloomWatch repository kept stable with CI and security governance.
 Active development is concentrated in the TypeScript primary repository.
